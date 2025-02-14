@@ -51,6 +51,7 @@ public class SimpleFloatConverter {
     }
 
     public static void main(String[] args) {
+        System.out.println(FloatToTheSimpleModel(32));
         System.out.println(FloatToTheSimpleModel(-26.625));
         System.out.println(FloatToTheSimpleModel(-376.095));
     }
