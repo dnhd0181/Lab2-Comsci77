@@ -51,8 +51,7 @@ public class SimpleFloatConverter {
     }
 
     public static void main(String[] args) {
-        double testValue = -26.625;
-        String result = FloatToTheSimpleModel(testValue);
-        System.out.println("Encoded value: " + result);
+        System.out.println(FloatToTheSimpleModel(-26.625));
+        System.out.println(FloatToTheSimpleModel(-376.095));
     }
 }
