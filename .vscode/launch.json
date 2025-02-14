@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleFloatConverter",
+            "request": "launch",
+            "mainClass": "SimpleFloatConverter",
+            "projectName": "Lab2-Comsci77_d3e0f7ec"
+        },
+        {
+            "type": "java",
+            "name": "FloatToTheSimpleModel",
+            "request": "launch",
+            "mainClass": "FloatToTheSimpleModel",
+            "projectName": "Lab2-Comsci77_d3e0f7ec"
+        },
+        {
+            "type": "java",
             "name": "FloatToSimplifiedIEEE754",
             "request": "launch",
             "mainClass": "FloatToSimplifiedIEEE754",
