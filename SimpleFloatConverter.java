@@ -21,7 +21,7 @@ public class SimpleFloatConverter {
         int exponent = 0;
         double significand = value;
 
-        // Normalize to 0.1XXXXXXX format
+        // Normalize to 1.XXXXXXX format
         while (significand >= 2.0) {
             significand /= 2.0;
             exponent++;
@@ -31,8 +31,11 @@ public class SimpleFloatConverter {
             exponent--;
         }
 
+        // Adjust the Exponent to normalize the Significand to 0.1XXXXXXX format
+        exponent += 1;
         // Adjust exponent with bias
         exponent += 15;
+
         if (exponent < 0 || exponent > 31) {
             throw new ArithmeticException("Value out of representable range");
         }
@@ -48,7 +51,7 @@ public class SimpleFloatConverter {
     }
 
     public static void main(String[] args) {
-        double testValue = -376.095;
+        double testValue = -26.625;
         String result = FloatToTheSimpleModel(testValue);
         System.out.println("Encoded value: " + result);
     }
