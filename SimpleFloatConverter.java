@@ -10,6 +10,7 @@
  * 4. Extract the significand (first 8 bits after the binary point)
  */
 
+// Thi Huynh
 public class SimpleFloatConverter {
     public static String FloatToTheSimpleModel(double inputValue) {
         if (inputValue == 0.0)
