@@ -1,3 +1,5 @@
+// Huy Nguyen
+
 import java.util.Scanner;
 
 public class SignedMagnitudeTwosComplement {
